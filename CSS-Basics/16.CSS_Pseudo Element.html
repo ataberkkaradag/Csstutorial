@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Pseudo Element</title>
+    <style>
+        .para1{
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+        }
+        .para1::first-line{
+            color: red;
+        }
+        .para1::first-letter{
+            color: royalblue;
+            font-size: 70px;
+        }
+        .para1::before{
+            content: "Paragraf Öncesi";
+        }
+        .para1::after{
+            content: url("./images/1200px-Old_logo_of_Galatasaray_SK.svg.png");
+        }
+
+    </style>
+</head>
+<body>
+    <p class="para1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, et atque, 
+        sit vero a debitis veritatis, doloribus temporibus rem necessitatibus pariatur libero maxime repellendus. 
+        Ratione quo maiores quia fuga at laudantium ab esse quisquam sed culpa quam unde quasi temporibus sapiente ducimus fugiat sit minus corporis 
+        architecto incidunt natus quod, laboriosam autem? Consectetur enim ab sequi ad ut facere nisi officia unde pariatur, maxime provident itaque 
+        veritatis dolores eligendi voluptas nesciunt odio animi soluta libero! Molestiae dolor consequatur 
+        rerum error deleniti, quod temporibus dolore eos voluptate fuga magni excepturi id, nostrum ipsum 
+        voluptatem quibusdam dolores accusantium voluptates quisquam perferendis assumenda!</p>
+</body>
+</html>
